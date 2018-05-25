@@ -1,0 +1,5 @@
+public equals(Object o){
+	if(o instanceOf Point){
+		return (x==(Point) o.x && y == (Point) o.y)
+	}
+}

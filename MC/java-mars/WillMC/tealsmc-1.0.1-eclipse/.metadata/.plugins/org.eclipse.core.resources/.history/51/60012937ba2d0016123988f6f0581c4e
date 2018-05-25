@@ -1,0 +1,49 @@
+package tealsmc.mods.blocks;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Blocks;
+import net.minecraft.world.World;
+
+public class ShieldBlock extends Block{
+private int radius;
+	public ShieldBlock(Material x, int radius){
+		super(x);
+		this.radius = radius;
+		setCreativeTab(CreativeTabs.tabBlock);
+		
+	}
+	
+	public void onBlockAdded(World world, int locX, int locY, int locZ){
+		for(int i = -radius; i <= radius; i++){
+			/*
+			for()
+			*/
+			for(int j = 0; j < radius; j++){
+				for(int k = 0; k < radius; k++){
+					if((j*j + k*k) < radius*radius){ 
+						//i * i is atleast baseHeight * baseHeight
+						if(i*i + k*k < radius * radius && Math.abs(i*i) + k*k> radius * radius - 7){
+							if(i*i + j*j < radius * radius && Math.abs(i*i) + j*j > radius * radius -7){
+								if(world.getBlock(locX+j, locY + i, locZ+k).isAir(world, locX+j, locY + i, locZ+k)){
+									world.setBlock(locX+j, locY + i, locZ+k, BlocksModule.unbreakingIce);
+								}
+								if(world.getBlock(locX-j, locY + i, locZ-k).isAir(world, locX-j, locY + i, locZ-k)){
+									world.setBlock(locX-j, locY + i, locZ-k, BlocksModule.unbreakingIce);
+								}
+								if(world.getBlock(locX-j, locY + i, locZ+k).isAir(world, locX-j, locY + i, locZ+k)){
+									world.setBlock(locX-j, locY + i, locZ+k, BlocksModule.unbreakingIce);
+								}
+								if(world.getBlock(locX+j, locY + i, locZ-k).isAir(world, locX+j, locY + i, locZ-k)){
+									world.setBlock(locX+j, locY + i, locZ-k, BlocksModule.unbreakingIce);
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+}

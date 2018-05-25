@@ -1,0 +1,9 @@
+(0,0,0)white
+(0,0,1)black
+(0,1,0)black
+(1,0,0)black
+(0,1,1)white
+(1,1,1)black
+(1,1,0)white
+x,z,y
+where y is vertical

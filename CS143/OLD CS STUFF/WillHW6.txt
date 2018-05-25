@@ -1,0 +1,125 @@
+Complete the following Self-Check Problems listed at the end of Chapter 11:
+
+1, 2, 3, 4, 5, 8, 9, 10, 11, 12, 13, 15, 16, 17, 18 and  20 
+
+Of the above listed questions, 4, 5, 9, and 16 require you to write short programs or code snippets.   
+Please turn in these questions electronically in a single file that is easily editable, 
+such as a .txt doc or as a .java doc (which wouldn't compile, 
+so that I can easily copy and paste your solutions from your single file into my test code.   
+
+The other questions, some of which require you to examine code and write output, or to answer questions, 
+may be either turned in typed or neatly (legibly) handwritten.
+
+NOTE:      
+
+For part 2:   I will weight the 4 questions that require programming at 3 times the weight  as the other questions.  
+
+Part 2 is worth 6 of the available 10 points.  (So part 1 is worth 4 points)
+
+Because this Homework is of a different format than previous homeworks 
+and some of you may wish to turn in part of the assignment in class, 
+the entire assignment, including the MPL portion, 
+is due at the beginning of class, Thursday, May 12th.
+
+1. When should you use a LinkedList instead of an ArrayList?:
+When you want to add and remove specific positions in the list much more quickly and
+are okay with taking a longer period of time to traverse through the entire list.
+
+2.Would a Linked List or ArrayList perform better when run on the following code? why?
+(code in bk, pg 732):
+An ArrayList would perform better as we are traversing through the list in this part, which takes longer
+when we do it in a LinkedList, as LinkedList are connected in a specific order from node to node and we would
+have to start for the beginning to go to a specific node in the LinkedList while an ArrayList has random access.
+
+3.What is an iterator and why are they used with LinkedLists?:
+An iterator is used to iterate and find different values ina collection, whether they have
+specified positions like a LinkedList, or whether they're a set and require an iterator to reach.
+Using an iterator helps us get quicker access to those values in the middle of the LinkedList that
+were difficult or took long to reache before.
+
+4.
+public int count method1(LinkedList<Integer> list) {
+    int count = 0;
+    Iterator<Integer> i = list.iterator();
+    int prev = i.next();
+    while (i.hasNext()) {
+        int next = i.next();
+        if (prev == next) {
+            count++;
+        }
+        prev = next;
+    }
+    return count;
+}
+
+5.
+public  void order(LinkedList<String> list, String x) {
+    int index = 0;
+    Iterator<String> i = list.iterator();
+    String next = i.next();
+    while (i.hasNext() && next.compareTo(x) < 0) {
+        next = i.next();
+        index++;
+    }
+    list.add(index, x);
+}
+
+8.Abstract Data Types are different forms of organizing data. Book definition is 
+a specification of a type of data and the operations that can be performed on it. 
+They are usually implemented by interfaces. A LinkedList implements the List
+interface, which implements the Collection interface.
+
+9. (Method overloading for lists)
+public int count method1(List<Integer> list) {
+    int count = 0;
+    Iterator<Integer> i = list.iterator();
+    int prev = i.next();
+    while (i.hasNext()) {
+        int next = i.next();
+        if (prev == next) {
+            count++;
+        }
+        prev = next;
+    }
+    return count;
+}
+
+10.A set provides similar features to a List except all values are unique. Since there are no
+duplicates, it provides faster information for when you're looking for unique values.
+
+11.Using a Treeset is when you want to have a sorted set of data, while a hashset provides information
+in no particular order but slightly faster.
+
+12. For a set, you can examine the information with for each loop, or you can use an iterator for both
+getting and setting the values in a set.
+
+13.the set has: [32, 90, 9, 182, 29, 12]
+
+15.Write the output for a,b, and c.
+a.[amanda, helene, jessica, marty, stuart]
+b.[caitlin, janette, sara, riley, zack]
+c.[alex, charlie, phil, roy, tyler, zorah]
+
+16. Map<String, Integer> = map = new HashMap<String, Integer>();
+map.put(Will, 18);
+map.put(Even, 18);
+map.put(Thuy, 58);
+
+
+17. You have to use a for each on the list of keys (keySet())
+and then call a map.get(for each type name)
+
+18.
+8, ocho
+18, Eighteen
+50, Fourty-One
+132, OneThreeTwo
+79, Seventy-Nine
+28, 18
+
+20.
+a{brick, plaster}
+b{blue, green, yellow}
+c{fruit}
+d{animal, cat, dog, ipl}
+

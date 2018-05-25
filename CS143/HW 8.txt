@@ -1,0 +1,44 @@
+From your text book, complete the following end of chapter, "Self Check" questions:
+
+Chapter 13: 2, 3, 5, 9-13, 16, 18
+
+Chapter 14: 1-7, 11, 12, 13-15
+
+ 
+
+These are all short answer questions with no programming.   Please turn them in, ON PAPER, in class, at the beginning of class,  on Thursday.
+
+William Nguyen
+CS 143 w/ Dr. Taub
+5/21/16
+HW 8
+
+CH 13:
+2. E
+3. Sequential is used because more advanced searches require you to implement comparables.
+5.Collections arranges strings alphabetically with capitals before lowercase words. You can
+change this by creating a new comparator and feeding it a different standard for the order.
+9.O(logN)
+10.O(N)
+11.O(N^2)
+12.O(N^2)
+13.O(N)
+16.Runtime seq search on unsorted array:
+the size of the array, as if it goes through entirely and doesn't find the match it needs, it will end.
+so O(N)
+18.6
+
+CH 14:
+1.C.
+2.Stack of papers/books, or a model of a line of individuals.
+3.Push adds a new value to the top of the stack, and pop takes the last value that you put into the stack.
+4.Add puts another value at the end of the queue, whereas remove takes something from the beginning or what was first added.
+5.first 3,2,1 last
+6.first 1,2,3 last
+7.Queues are actually LinkedLists. so it would be 
+Queue<Integer> q = new LinkedList<Integer>();
+11.You would have to work down the queue to the halfway point with a loop or manually popping the values.
+12.They are a lot more efficient for specific situations as they take very little resources as an ADT.
+13.you are how
+14. 10, 7, 5, false, 2, 3, 8, 3
+15. 2, 10, 10, 4, 6, 6, 3

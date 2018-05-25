@@ -1,0 +1,110 @@
+
+
+
+
+
+^Description/Story, with the carrot in front... this is how we're finding the story portion of the text
+&Option 1, with ampersands in front to delimit the options
+&Option 2
+&Option 3
+^
+&Story
+&Option 2a We only need 3 options and 1 story each for now, maybe 10  of those 4? Ish? 
+&Option 3a
+&Option 1b
+
+
+
+The ending of my outline is 
+^A few hours on your journey, you don't feel the long-anticipated pleasure of the journey and As darkness falls and you light your torch, you stagger backwards as a large furry creature bursts out of the foliage! With a quick reaction, you
+
+
+SAMPLE:
+^
+&Story
+&Option 1 Go right
+&Option 2 Go left
+&Option 3 Go forward
+
+^
+&Story
+&Option 1 Go up
+&Option 2 Go down
+&Option 3 Go forward
+
+^
+&Option 1 Talk to the person
+&Option 2 Walk past the person
+&Option 3 Attack the person
+
+
+
+
+
+
+^ Homecoming: A Tale by Brandon, Joshua, and William, the Supreme Bards The Beginning Willon Joshyen was bored... You were tired of this farm, always being told what to do, and how to do it, and where not to go. C'mon, you've never even been out of range of our property's hill before! Grandpa Dan and your mother, Jenine were so overbearing that you was sick of it. Well, today you wasn't going to tolerate it any longer... Today you are going on an adventure, one long in the making! But first, you need to decide how to do so...Will you-
+&Option 1 Go to the top of the hill?
+&Option 2 Go to the barn?
+&Option 3 Go down the road?
+
+
+
+^You started on his way to the hill to the north. As he went, he looked around again at his family's place. To his left was a river, winding its way down the hill. The forest around him was full of pine trees, and still had that wet look from a hard rain last night. Once at the top, about a  25 minute hike, he saw that the road extended a few miles, and then the road branched off into three different branches. Left, right or center? He'll have to choose later... He traveled back to his house "He walked toward the barn, hearing the gentle clucking of the chickens beside the barn, and smelling the rich, powerful scent inside the barn. He noticed a few spare tools that looked handy!
+&Option 1 Grab a machete
+&Option 2 Grab some antiseptic
+&Option 3 Go back
+
+
+^Just as you started going back to the house, he heard some rustling behind the barn. You know what that is! It's the dastardly local pest, the bloatfly! And this time you have something to hit it with! Do you-
+&Option 1 start a fight
+&Option 2 sprint away
+&Option 3 tempt the bloatfly with something in your pocket.
+
+
+
+^With your weapon, you choose to fight! You quickly think of several approaches of attack! Do you-
+&Option 1 Quickly close the distance and attack its weakpoint?
+&Option 2 Try to swing a blow at it with all your might?
+&Option 3 Try to throw some dust at its antennas and wings?
+
+
+^While thinking of your attack strategy, the bloatfly stings you! You lose some health. But, enraged, your attack connects!
+&Option 1 Dodging another sting at close range, you pierce the eye of the fly! The fly drops to the ground immediately
+&Option 2 Your blow swats the fly to the ground raising a puff of dust off the ground from the force of the strike
+&Option 3 Your handfull of dust gets in the way of the flying, and as the fly squirms on the ground you casually stomp on the fly, ending its miserable life
+
+
+(alternative)
+^You quickly dash away, knowing that even with your weapon, you could get hurt, and that would hinder your travels! You hear the fly buzzing angrily behind you, but...
+
+(alternative)
+^With the crumbs, and hiding behind the corner of the barn, the fly buzzes down to the crumbs, and while it's on the ground you push over the wheelbarrow it was next to, smashing it before it could get out from under it.
+
+
+^You have done it! A warm sense of accomplishment floods you, since that animal was dangerous! Based on your previous choice, your stats have been updated. Having cleaned yourself up, you start out on the road! Having walked a few miles, you come across a fork in the road. Do you-
+&Option 1 Go left, down the road stretching out towards the plains and the wilderness?
+&Option 2 Go straight, towards the big city ruins you've only heard about?
+&Option 3 Go right, towards the old-growth forest, torwards the old castle you're sure you've seen on particularly clear days.
+
+^Before you can even start moving down the path, you hear pattering of feet coming from behind you. You curiously look backwards, and sigh to see your little sister, Marjorie. \"Come quick!\" she squeaked. \"Grandpa's fallen and can't get up!\"Without even bothering to check for your response, she dashes back the way she came. Your heart drops to your feet as you sprint after her. \"He won't respond to anything we say\", your mother said.\"After he fell down the stairs, he just lay there, saying only one thing. 'The City' he said,over and over. The only city we know is the old abandoned city several days to the north, but why would he mention that?\" she whispered fretfully. You racked your brain, and suddenly an old story he told just a few days ago surfaced in your mind. \"Remember dinner the other night, he told a story about a place in the city, where men would lie down in magical beds and be healed after having a few small pieces of a bitter, crunchy white bread? he must mean there! I have to go!\"
+^Ignoring the pleading of your sister and mother to stay, you grab your things and leave at once, traveling down the road, and taking the straight path that leads to the ruined city, hoping to find a cure for your ailing Grandpa Dan.
+
+^A few hours on your journey, you don't feel the long-anticipated pleasure of the journey and As darkness falls and you light your torch, you stagger backwards as a large furry creature bursts out of the foliage! With a quick reaction, you
+&Option 1 Set your feet and throw a shoulder into the attack
+&Option 2 Quickly duck, having it fly over your head
+&Option 3 Wave the torch in its face!
+
+^The beast is forced into a tree trunk and collapses. Looking it over, it seems to be some mutant animal, with some minor injuries that you didn't seem to cause. You decide to
+&Option 1 Leave the animal alone
+&Option 2 Kill the animal and take some meat.
+&Option 3 Look for anything useful from the animal.
+
+^Moving on, you decide to tread deeper into the forest, confident in your abilities, although paranoid of whatever had hurt that mutant creature. As you are mulling this over, you hear a twig snap, and soon after you black out. You wake up with a splitting headache, near a fire listening to what seems like a group of ruffians winding down for the night. You try to move but it seems that they have bounded you, and were likely the culprits that clubbed you. You decide to
+&Option 1 Try to force open your bonds.
+&Option 2 Pretend to sleep and play it cool
+&Option 3 Reach for something around your hands to help you.
+
+^In the process of doing so, your bonds are suddenly split as you barely notice a shadow slipping away from you. Before thinking too much on it, you decide to
+&Option 1 Grab some scraps of food that the ruffians tossed.
+&Option 2 Reach for one of the weapon crates near the ruffians at the campfire
+&Option 3 Sneak away, following what you think is the shadow that freed you.

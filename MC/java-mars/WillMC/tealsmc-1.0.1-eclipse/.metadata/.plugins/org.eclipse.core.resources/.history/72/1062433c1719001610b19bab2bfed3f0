@@ -1,0 +1,55 @@
+package tealsmc.mods.items;
+
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.world.World;
+import net.minecraft.*;
+
+public class RockSifter extends Item {
+
+    public RockSifter() {
+    setMaxStackSize(1);
+    setCreativeTab(CreativeTabs.tabTools);
+    }
+    public ItemStack onItemRightClick (ItemStack stack, World world, EntityPlayer player){
+    	ItemStack[] inventory = player.inventory.mainInventory;
+    	//for(ItemStack store: inventory){
+    	int num = 0;
+    	ItemStack store = null;
+    	
+    	for(int i = 0; i< inventory.length; i++){
+    		/*String itemName = itemStack.getItem().getUnlocalizedName();
+			 *if (itemName.equals(Blocks.sand.getUnlocalizedName())) {
+    		 *	...
+			 *}
+    		 * 
+    		 * */
+    		String itemName = "";
+    		if(inventory[i]	!= null){
+    			itemName = inventory[i].getItem().getUnlocalizedName();
+    			if(itemName.equals(Blocks.sand.getUnlocalizedName())){
+    			//store = inventory[i];
+    				int rand = (int)(Math.random()*10);
+    				
+    				if(rand == 0){
+    					num = (int) ((Math.random() * 63) + 1);
+    					ItemStack x = new ItemStack(Items.gold_nugget,num);
+    					store = player.inventory.mainInventory[i];
+    					player.inventory.mainInventory[i] = x;
+    				}
+    				
+    				else{
+    					store = player.inventory.mainInventory[i];
+    					player.inventory.mainInventory[i] = null;
+    				}
+    			}
+
+    		}
+    	}
+    	return stack;
+    }
+}

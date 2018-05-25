@@ -1,0 +1,97 @@
+---- Minecraft Crash Report ----
+// I just don't know what went wrong :(
+
+Time: 6/9/16 3:15 PM
+Description: Unexpected error
+
+java.lang.ClassCastException: net.minecraft.entity.passive.EntityChicken cannot be cast to net.minecraft.entity.player.EntityPlayer
+	at tealsmc.mods.items.TeslaCannon.onItemRightClick(TeslaCannon.java:28)
+	at net.minecraft.item.ItemStack.useItemRightClick(ItemStack.java:164)
+	at net.minecraft.client.multiplayer.PlayerControllerMP.sendUseItem(PlayerControllerMP.java:430)
+	at net.minecraft.client.Minecraft.func_147121_ag(Minecraft.java:1546)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:2033)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1028)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:951)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:100)
+	at GradleStart.main(GradleStart.java:43)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at tealsmc.mods.items.TeslaCannon.onItemRightClick(TeslaCannon.java:28)
+	at net.minecraft.item.ItemStack.useItemRightClick(ItemStack.java:164)
+	at net.minecraft.client.multiplayer.PlayerControllerMP.sendUseItem(PlayerControllerMP.java:430)
+	at net.minecraft.client.Minecraft.func_147121_ag(Minecraft.java:1546)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityClientPlayerMP['Player166'/214, l='MpServer', x=846.30, y=5.62, z=-396.19]]
+	Chunk stats: MultiplayerChunkCache: 25, 25
+	Level seed: 0
+	Level generator: ID 01 - flat, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (804,4,-218), Chunk: (at 4,0,6 in 50,-14; contains blocks 800,0,-224 to 815,255,-209), Region: (1,-1; contains chunks 32,-32 to 63,-1, blocks 512,0,-512 to 1023,255,-1)
+	Level time: 69997 game time, 6008 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 36 total; [EntityCow['Cow'/72, l='MpServer', x=832.56, y=4.00, z=-404.75], EntityCow['Cow'/73, l='MpServer', x=836.75, y=4.00, z=-414.81], EntityChicken['Chicken'/74, l='MpServer', x=843.59, y=4.00, z=-408.59], EntityCow['Cow'/75, l='MpServer', x=838.94, y=4.00, z=-353.34], EntitySlime['Slime'/76, l='MpServer', x=832.63, y=4.50, z=-358.81], EntitySlime['Slime'/77, l='MpServer', x=833.63, y=4.00, z=-360.38], EntitySlime['Slime'/78, l='MpServer', x=834.38, y=4.00, z=-357.63], EntitySlime['Slime'/79, l='MpServer', x=835.38, y=4.00, z=-360.16], EntitySlime['Slime'/80, l='MpServer', x=839.61, y=4.93, z=-363.63], EntitySheep['Sheep'/208, l='MpServer', x=871.61, y=5.00, z=-419.47], EntitySlime['Slime'/81, l='MpServer', x=836.74, y=4.00, z=-364.63], EntityChicken['Chicken'/215, l='MpServer', x=839.25, y=4.00, z=-425.84], EntityCow['Cow'/216, l='MpServer', x=835.31, y=4.00, z=-421.11], EntityHorse['Horse'/88, l='MpServer', x=848.84, y=4.00, z=-401.53], EntityHorse['Horse'/217, l='MpServer', x=840.09, y=4.00, z=-424.22], EntitySheep['Sheep'/89, l='MpServer', x=855.16, y=4.00, z=-388.63], EntityCreeper['Creeper'/218, l='MpServer', x=844.47, y=4.00, z=-425.53], EntitySheep['Sheep'/90, l='MpServer', x=849.16, y=4.00, z=-390.97], EntityHorse['Horse'/219, l='MpServer', x=833.16, y=4.00, z=-416.94], EntityHorse['Donkey'/91, l='MpServer', x=850.75, y=4.00, z=-372.53], EntityChicken['Chicken'/220, l='MpServer', x=858.44, y=4.00, z=-418.53], EntitySheep['Sheep'/92, l='MpServer', x=849.31, y=4.00, z=-363.09], EntitySlime['Slime'/221, l='MpServer', x=852.21, y=4.95, z=-417.88], EntityHorse['Horse'/222, l='MpServer', x=792.63, y=0.85, z=-417.22], EntityHorse['Horse'/223, l='MpServer', x=794.17, y=0.85, z=-416.83], EntitySlime['Slime'/224, l='MpServer', x=802.22, y=4.93, z=-442.30], EntitySlime['Slime'/225, l='MpServer', x=802.93, y=2.96, z=-433.00], EntityVillager['Villager'/226, l='MpServer', x=879.59, y=5.00, z=-432.06], EntityVillager['Villager'/227, l='MpServer', x=880.22, y=4.86, z=-443.49], EntitySheep['Sheep'/100, l='MpServer', x=869.97, y=4.00, z=-407.03], EntitySheep['Sheep'/101, l='MpServer', x=876.41, y=4.00, z=-397.16], EntitySheep['Sheep'/102, l='MpServer', x=868.44, y=4.00, z=-376.16], EntitySlime['Slime'/103, l='MpServer', x=875.59, y=4.00, z=-352.68], EntityClientPlayerMP['Player166'/214, l='MpServer', x=846.30, y=5.62, z=-396.19], EntitySlime['Slime'/54, l='MpServer', x=805.36, y=4.47, z=-368.90], EntitySlime['Slime'/59, l='MpServer', x=824.38, y=4.08, z=-357.63]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:415)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2555)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:980)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:100)
+	at GradleStart.main(GradleStart.java:43)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 7 (amd64) version 6.1
+	Java Version: 1.8.0_60, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 113892216 bytes (108 MB) / 344981504 bytes (329 MB) up to 926941184 bytes (884 MB)
+	JVM Flags: 0 total; 
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.85.1291 Minecraft Forge 10.13.2.1291 4 mods loaded, 4 mods active
+	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	FML{7.10.85.1291} [Forge Mod Loader] (forgeSrc-1.7.10-10.13.2.1291.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Forge{10.13.2.1291} [Minecraft Forge] (forgeSrc-1.7.10-10.13.2.1291.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	tealsmodloader{1.0.0} [TEALS Mod Loader] (bin) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Launched Version: 1.7.10
+	LWJGL: 2.9.1
+	OpenGL: Intel(R) HD Graphics 2500 GL version 4.0.0 - Build 9.17.10.2849, Intel
+	GL Caps: Using GL 1.3 multitexturing.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Anisotropic filtering is supported and maximum anisotropy is 16.
+Shaders are available because OpenGL 2.1 is supported.
+
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: []
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Anisotropic Filtering: Off (1)

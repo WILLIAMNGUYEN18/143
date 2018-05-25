@@ -1,0 +1,13 @@
+package tealsmc.mods.entities;
+
+import org.tealsk12.tealsmodloader.builtin.entity.Robot;
+
+import net.minecraft.entity.ai.EntityAIWander;
+
+public class OverwatchBot  extends Robot{
+	public OverwatchBot(World world){
+	super(world);
+	EntityAIWander x = new EntityAIWander(this, SPEED_SLOW);
+	tasks.addTask(1, x);
+	}
+}

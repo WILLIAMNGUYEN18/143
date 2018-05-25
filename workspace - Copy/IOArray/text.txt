@@ -1,0 +1,12 @@
+h 1.0
+foo 3.0
+William Nguyen 1.0
+doge 1.0
+hhhh 4.0
+cat 1.0
+byird 5.0
+kappa 3.0
+cyka 1.0
+123 0.0
+asd 2.0
+asfd -10.0

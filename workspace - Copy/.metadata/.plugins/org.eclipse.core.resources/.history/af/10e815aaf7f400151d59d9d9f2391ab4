@@ -1,0 +1,19 @@
+/**
+ * This is a class that tests the Card class.
+ */
+public class CardTester {
+
+	/**
+	 * The main method in this class checks the Card operations for consistency.
+	 *	@param args is not used.
+	 */
+	public static void main(String[] args) {
+		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
+		Card x = new Card("A","Spade",2);
+		Card z = new Card ("A","Spade",2);
+		Card y = new Card("K", "Spade", 2);
+		System.out.println("Are these 2 cards equal?:"+ x.matches(z));
+		System.out.println(x.toString());
+		
+	}
+}

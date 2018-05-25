@@ -1,0 +1,6 @@
+#CS 143 Critters saved network settings
+#Wed May 04 07:36:47 PDT 2016
+backgroundColors=false
+lastHostName=
+accept=ask
+fps=26

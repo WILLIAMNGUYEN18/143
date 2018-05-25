@@ -1,0 +1,25 @@
+2 separate inventories
+Arraylist of stacks for consumables.
+
+Arraylist for items
+
+Inventory class with both arraylists.
+overall addItem and removeItem methods
+
+
+Need to do melee/ranged subclass
+
+fix arrows
+
+
+
+UML GUI
+UML file processing
+
+Main:
+Setting default info
+
+Taking in information
+
+looping
+

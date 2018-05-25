@@ -1,0 +1,11 @@
+package tealsmc.mods.items;
+
+import net.minecraft.creativetab.CreativeTabs;
+
+public class TeslaCannon extends Item{
+	public TeslaCannon{
+		setMaxStackSize(1);
+		setCreativeTab(CreativeTabs.tabTools);
+		
+	}
+}

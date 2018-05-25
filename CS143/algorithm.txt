@@ -1,0 +1,105 @@
+SUBROUTINE createWeapon()
+	write prompt for name
+	read name
+	write prompt for bonus
+	read bonus
+	write prompt for description
+	read description
+	write prompt for damage
+	read damage
+	write prompt for equip
+	read equip
+	write prompt for melee
+	read melee
+OBJECT weapon = CALL Weapon(name, int, bonus, desc, dmg, equip, melee)
+return weapon
+
+SUBROUTINE createAccessor()
+	write prompt for name
+	read name
+	write prompt for bonus
+	read bonus
+	write prompt for description
+	read description
+	write prompt for equip
+	read equip
+	Write prompts for unlocksMap<String>
+	read unlocksMap<String>
+return accessor
+
+SUBROUTINE createArmor()
+	write prompt for name
+	read name
+	write prompt for bonus
+	read bonus
+	write prompt for description
+	read description
+	write prompt for equip
+	read equip
+	write prompt for bodyPartMap<String>
+	read bodyPartMap<String>
+	write prompt for armorValue
+	read armorValue
+return armor
+
+SUBROUTINE createConsumable()	
+	write prompt for name
+	read name
+	write prompt for bonus
+	read bonus
+	write prompt for description
+	read description
+	write prompt for equip
+	read equip
+return consumable
+
+SUBROUTINE createPerson()
+	write prompt for weapon
+	read weapon
+	write prompt for name
+	read name
+	write prompt for health
+	read maxHealth/health
+	write prompt for strength
+	read strength
+	write prompt for intelligence
+	read intelligence
+	write prompt for agility
+	read agility
+	write prompt for level
+	read level
+	write prompt for helm
+	read helm
+	write prompt for chest
+	read chest
+	write prompt for pants
+	read pants
+	write prompt for boots
+	read boots
+	write prompt for gloves
+OBJECT person = CALL Person(weapon, name, health, strength, intelligence, agility, level, helm, chest, pants, boots, gloves)
+return person
+
+SUBROUTINE createSection()
+	write prompt for Items
+	read List<Items>
+	write prompt for Enemies(person/entity)
+	read List<Enemies>
+	write prompt for Objects
+	read List<Objects>
+	write requirements
+	read List<boolean>
+	write story
+	read List<Story>
+OBJECT section = CALL Section(Items,Enemies, Objects, requirements, story)
+return section
+
+ SUBROUTINE createStudent() 
+ WRITE prompt for student ID 
+ READ id
+ WRITE prompt for last name 
+ READ lName 
+ WRITE prompt for first name 
+ READ fName 
+ OBJECT student = CALL Student(lName, fName, id) 
+ RETURN student

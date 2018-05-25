@@ -1,0 +1,14 @@
+package tealsmc.mods.entities;
+
+import net.minecraft.entity.ai.EntityAIBase;
+
+public class EntityAILeap extends EntityAIBase{
+	private Robot
+
+	@Override
+	public boolean shouldExecute() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

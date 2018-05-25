@@ -1,0 +1,22 @@
+{
+  "C:\\Program Files\\Java\\jre1.8.0_60\\lib\\rt.jar": {
+    "location": "C:\\Program Files\\Java\\jre1.8.0_60\\lib\\rt.jar",
+    "status": "UNRESOLVED",
+    "error": "No call model found for \u0027C:\\Program Files\\Java\\jre1.8.0_60\\lib\\rt.jar\u0027. Neither fingerprint \u002793c234a386dc7a524185118d339798f5ec4d780a\u0027 nor symbolic name \u0027jre\u0027 are known."
+  },
+  "C:\\Users\\158839\\Desktop\\ElevensActivityTwo\\src": {
+    "location": "C:\\Users\\158839\\Desktop\\ElevensActivityTwo\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027C:\\Users\\158839\\Desktop\\ElevensActivityTwo\\src\u0027. Skipped."
+  },
+  "\\\\EHSfs01\\EHSstudents\\2016\\Nguyen.William.M\\workspace - Copy\\ElevensActivityTwo\\src": {
+    "location": "\\\\EHSfs01\\EHSstudents\\2016\\Nguyen.William.M\\workspace - Copy\\ElevensActivityTwo\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027\\\\EHSfs01\\EHSstudents\\2016\\Nguyen.William.M\\workspace - Copy\\ElevensActivityTwo\\src\u0027. Skipped."
+  },
+  "\\\\EHSfs01\\EHSstudents\\2016\\Nguyen.William.M\\workspace - Copy\\ElevensActivityFour\\src": {
+    "location": "\\\\EHSfs01\\EHSstudents\\2016\\Nguyen.William.M\\workspace - Copy\\ElevensActivityFour\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027\\\\EHSfs01\\EHSstudents\\2016\\Nguyen.William.M\\workspace - Copy\\ElevensActivityFour\\src\u0027. Skipped."
+  }
+}

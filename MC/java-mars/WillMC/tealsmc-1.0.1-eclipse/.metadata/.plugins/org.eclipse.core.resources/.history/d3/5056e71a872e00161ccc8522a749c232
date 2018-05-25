@@ -1,0 +1,15 @@
+package tealsmc.mods.items;
+
+import org.tealsk12.tealsmodloader.module.Module;
+
+public class ItemsModule extends Module {
+
+    public static final RockSifter rockSifter = new RockSifter();
+    public static final CrystalGrowingItem crystalGrowingItem = new CrystalGrowingItem();
+    public static final SoundBarrier soundBarrier = new SoundBarrier();
+    public void onLoad() {
+        parentMod.itemRegistry.newInstance("rock_sifter", rockSifter, "Rock Sifter");
+        parentMod.itemRegistry.newInstance("crystal_growing_item", crystalGrowingItem, "Crystal Growing Item");
+        parentMod.itemRegistry.newInstance("sound_barrier_item.fw", soundBarrier, "Sound Barrier");
+    }
+}
